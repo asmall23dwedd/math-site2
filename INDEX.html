@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arran Tutors Math</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f6ff;
+      text-align: center;
+      padding: 2rem;
+    }
+    header {
+      background-color: #004aad;
+      color: white;
+      padding: 2rem 1rem;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    select {
+      margin-top: 2rem;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Arran Tutors Math</h1>
+  </header>
+
+  <main>
+    <h2>Select Your School Year</h2>
+    <select id="year-select" onchange="navigateToYear()">
+      <option value="">-- Choose Year --</option>
+      <option value="year7.html">Year 7</option>
+      <option value="year8.html">Year 8</option>
+      <option value="year9.html">Year 9</option>
+      <option value="year10.html">Year 10</option>
+      <option value="year11.html">Year 11</option>
+    </select>
+  </main>
+
+  <script>
+    function navigateToYear() {
+      const year = document.getElementById('year-select').value;
+      if (year) window.location.href = year;
+    }
+  </script>
+
+</body>
+</html>
